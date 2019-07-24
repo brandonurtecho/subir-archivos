@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Subir archivo</title>	
+<!-- 	<link th:href="@{css/jquery-ui.min.css}" rel="stylesheet" type="text/css"/> -->
+<!-- 	<link th:href="@{js/jquery.ui.plupload/css/jquery.ui.plupload.css}" rel="stylesheet" type="text/css"/> -->
+	<link th:href="@{css/bootstrap.min.css}" rel="stylesheet" type="text/css"/>
+	<link th:href="@{css/jquery.dm-uploader.min.css}" rel="stylesheet" type="text/css"/>
+	<link th:href="@{css/styles.css}" rel="stylesheet" type="text/css"/>
+	<style type="text/css">
+		.mr-3, .mx-3{
+			width: 42px;
+		}
+	</style>
+</head>
+<body>
+	<input name="files[]" type="file" multiple id="files"/> 
+    <input type="hidden" name="hiddenval" id="hiddenval" value=""/>
+    <br>
+    <br>
+    selected files: <span id="fileNum">0</span>;
+    total size: <span id="fileSize">0</span>
+    <br>
+    <br>
+    <button id="upload" class="btn btn-success">Upload</button>
+
+		
+	
+    <script th:src="@{js/jquery-3.3.1.min.js}"></script>
+    <script th:src="@{js/bootstrap.min.js}"></script>
+    <script th:src="@{js/jquery.dm-uploader.min.js}"></script>
+<!--     <script th:src="@{jquery-ui.min.js}"></script>	 -->
+<!--     <script th:src="@{js/plupload.full.min.js}"></script> -->
+<!--     <script th:src="@{js/jquery.ui.plupload/jquery.ui.plupload.min.js}"></script>	         -->
+	<script th:src="@{script.js}"></script>			
+	    
+</body>
+</html>
